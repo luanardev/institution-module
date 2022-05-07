@@ -1,0 +1,28 @@
+{
+    "name": "Institution",
+
+    "configurable": false,
+
+    "permissions": [
+        "create_branch",
+        "view_branch",
+        "update_branch",
+        "delete_branch",
+        "create_campus",
+        "view_campus",
+        "update_campus",
+        "delete_campus", 
+        "create_faculty",
+        "view_faculty",
+        "update_faculty",
+        "delete_faculty",
+        "create_department",
+        "view_department",
+        "update_department",
+        "delete_department",
+        "create_section",
+        "view_section",
+        "update_section",
+        "delete_section"
+    ]
+}

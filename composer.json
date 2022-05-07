@@ -1,0 +1,32 @@
+{
+    "name": "luanardev/institution-module",
+    "type": "laravel-module",
+    "description": "Lumis Institution Module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Simpokolwe",
+            "email": "bsimpokolwe@luanar.ac.mw"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luanardev\\Modules\\Institution\\Providers\\InstitutionServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Luanardev\\Modules\\Institution\\": ""
+        }
+    },
+    "scripts": {      
+        "post-install-module-cmd": [
+            "@php artisan module:install institution"
+        ]
+    }
+}
