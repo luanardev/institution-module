@@ -10,6 +10,12 @@ class Campus extends Model
 {
     use HasFactory, CampusPicker;
 
+    /** 
+     * Disable timestamp
+     * var bool
+     */
+    public $timestamps = false;
+
     /**
      * The table name
      *

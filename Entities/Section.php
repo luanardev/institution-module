@@ -9,6 +9,12 @@ class Section extends Model
 {
     use HasFactory;
 
+    /** 
+     * Disable timestamp
+     * var bool
+     */
+    public $timestamps = false;
+
     /**
      * The table name
      *
