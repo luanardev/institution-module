@@ -7,7 +7,7 @@
             @if(!empty($logo))
                 <img src="{{ asset("storage/{$logo}") }}" class="img-fluid"  />
             @else
-                <img src="{{ asset('assets/images/default.png') }}" class="img-fluid" style="max-height: 100px;" />
+                <img src="{{ asset('img/default.png') }}" class="img-fluid" style="max-height: 100px;" />
             @endif
         </p>
         <p>
