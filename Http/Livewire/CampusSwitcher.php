@@ -24,7 +24,8 @@ class CampusSwitcher extends LivewireUI
         if(!empty($campusId)){
             $this->campusCode = Campus::find($campusId)->code;
             $this->setCampusName();
-            session()->put('user_campus', $this->campusCode);    
+            session()->put('user_campus', $this->campusCode); 
+            $this->toastr('You have switch campus') ;  
         }else{
             if(session()->exists('user_campus') ){
                 session()->forget('user_campus');

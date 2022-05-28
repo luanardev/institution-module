@@ -1,9 +1,10 @@
 {
-    "name": "Institution",
+    "name": "Institution Setup",
 
     "configurable": false,
 
     "permissions": [
+		"org_setup",
         "create_branch",
         "view_branch",
         "update_branch",

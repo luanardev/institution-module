@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.app')
+@extends('layouts.app')
 
 @section('sidebar')
     @include('institution::layouts.sidebar')
@@ -8,3 +8,16 @@
     @include('layouts.control')
 @endsection
 
+@section('components')
+    @livewire('livewire-loader')
+@endsection
+
+@section('css') 
+    @livewireAlertStyles
+    @livewireLoaderStyles
+@endsection
+
+@section('js')
+    @livewireAlertScripts
+    @livewireLoaderScripts
+@endsection

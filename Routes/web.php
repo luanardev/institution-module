@@ -12,7 +12,10 @@
 */
 
 Route::prefix('institution')->middleware(['auth', 'module:institution'])->group(function() {
+	
     Route::get('/', 'HomeController@index')->name('institution.home');
+	
+    Route::get('setup', 'InstitutionController@index')->name('org.setup');
 
     Route::delete('branch/deleteAll', 'BranchController@deleteAll')->name('branch.deleteAll');
     Route::delete('section/deleteAll', 'SectionController@deleteAll')->name('section.deleteAll');

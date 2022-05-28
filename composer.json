@@ -15,7 +15,7 @@
                 "Luanardev\\Modules\\Institution\\Providers\\InstitutionServiceProvider"
             ],
             "aliases": {
-
+				"Institution": "Luanardev\\Modules\\Institution\\Facades\\Institution"
             }
         }
     },

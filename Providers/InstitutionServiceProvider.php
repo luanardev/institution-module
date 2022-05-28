@@ -4,6 +4,7 @@ namespace Luanardev\Modules\Institution\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Luanardev\Modules\Institution\Settings\Institution;
 
 class InstitutionServiceProvider extends ServiceProvider
 {
@@ -38,6 +39,10 @@ class InstitutionServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+		
+		$this->app->bind('institution',function(){
+            return new Institution();
+        });
     }
 
     /**

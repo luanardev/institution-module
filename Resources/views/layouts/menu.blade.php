@@ -6,6 +6,15 @@
     </a>
 </li>
 
+@can('org_setup')
+<li class="nav-item">
+	<a href="{{route('org.setup')}}" class="nav-link">
+		<i class="nav-icon fas fa-cog"></i>
+		<p>Institution</p>
+	</a>
+</li>
+@endcan
+
 @can('view_branch')
     <li class="nav-item">
         <a href="{{route('branch.index')}}" class="nav-link">
